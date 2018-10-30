@@ -1,0 +1,620 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skipLink:focus {
+    left: 0;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+html {
+    font-family: 'Cabin', sans-serif, 'Great Vibes', cursive;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h1, h2, h4 {
+    font-family: 'Great Vibes', cursive;
+}
+
+/* HEADER BELOW */
+
+
+header {
+    background-image: url(assets/image-1.png);
+    background-size: cover;
+    min-height: 100vh; 
+    background-position: center;    
+}
+
+.header {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 14px 0 0 160px;
+}
+
+ul {
+    margin: 0;
+}
+.mainMenu {
+    float: right;
+    margin-right: 160px;
+    padding-top: 24px;
+
+}
+
+.mainMenu li {
+    float: left;
+    list-style: none;
+    margin-left: 38px;
+    text-transform: uppercase;
+}
+
+li a {
+    color: #232323;
+    text-decoration: none;
+}
+
+h1 {
+    float: left;
+}
+
+.title {
+    clear: both;
+    text-align: center;
+    padding-top: 235px;
+
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 15.5rem;
+    margin: 0;
+    line-height: 1;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* SOCIAL MENU BELOW */
+
+
+i {
+    color: #232323; 
+    /* color: #fdc800; */
+}
+
+.socialMenu {
+    position: absolute;
+    right: 60px;
+    top: 328px;
+}
+
+.socialMenu a:nth-child(n+2) {
+    margin: 15px 0;
+}
+
+.socialMenu a {
+    display: block;
+}
+
+/* HEADER END */
+
+/* MAIN SECTION START */
+
+/* ABOUT SECTION BELOW */
+
+.about {
+    background: #eaedf4;
+    text-align: center;
+    padding: 100px 50px 118px 50px;
+}
+
+.aboutText {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 4.2rem;
+    margin: 0;
+}
+
+.about p {
+    margin: 30px 0 48px 0 ;
+}
+
+.about a, .cookText a, .recipes a {
+    background: #fdc800;
+    text-decoration: none;
+    color: #232323;
+    text-transform: uppercase;
+    padding: 18px 20px;
+    border-radius: 2px;
+}
+
+
+/* ICON MENU SECTION BELOW */
+
+
+.iconsMenu {
+    background: #232323;
+    padding: 100px 20px;
+}
+
+.iconContainer {
+     max-width: 800px;
+     margin: 0 auto;
+}
+
+figure {
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+figcaption {
+    color: #f8f8f8;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.iconContainer figure:nth-child(2) img {
+    padding-bottom: 4px;
+}
+
+.iconContainer figure:nth-child(3) img {
+    padding-bottom: 10px;
+}
+
+
+/* GALLERY SECTION BELOW */
+
+
+.gallery {
+    background: #f8f8f8;
+    padding: 100px 160px;
+}
+
+.imgGallery img {
+    width: calc((100% - 80px) / 3);
+    float: left;
+}
+
+.imgGallery img:nth-child(2) {
+    margin: 0 40px;
+}
+
+
+/*RECIPES SECTION BELOW */
+
+h5 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.recipes p {
+    margin: 30px 160px 48px 160px;
+}
+
+.top, .bottom {
+     background: #eaedf4;
+}
+.top div:first-child, .bottom div:last-child {
+    text-align: center;
+}
+
+.top div, .bottom div {
+    float: left;
+    width: 50%;
+}
+
+.recipes img {
+    width: 100%;
+    display: block;
+}
+/* COOK SECTION */
+
+
+.cook {
+    background: #f8f8f8;
+    padding: 100px 160px;
+}
+
+.cookBio div {
+    float: left;
+}
+
+.cookBio img {
+    float: left;
+    width: 25%;
+}
+
+.cookText {
+    width: 75%;
+    padding-left: 48px;
+}
+
+.cookText p {
+    margin: 30px 0 48px 0;
+}
+
+
+/* FOOTER SECTION BELOW */
+
+footer {
+        background: #232323;
+}
+
+h6 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+footer a, footer li, .subscribe p {
+    color: #f8f8f8;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer a {
+    padding: 5% 0;
+}
+
+.full-2 {
+    display: none;
+}
+
+.footer {
+    padding: 100px 0;
+    margin: 0 160px;
+}
+
+.footer div {
+    float: left;
+    margin-left: 60px;
+}
+
+.footer .contact {
+    margin: 0;
+}
+
+.footer .recentPosts {
+    margin-left: 100px;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.pages a {
+    text-transform: uppercase;
+}
+
+input[type=email] {
+    width: 480px;
+    height: 50px;
+    margin: 0;
+    border: none;
+    padding-left: 30px;
+}
+
+input[type=submit] {
+    background: #fdc800;
+    width: 160px;
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    margin: 0;
+}
+/* COPYRIGHT BELOW */
+
+.copyRight {
+    clear: both;
+    text-align: center;
+    color: #f8f8f8;
+    padding: 12px 0;
+}
+
+.copyRight p {
+      color: #f8f8f8;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width: 1550px) {
+    h5 {
+        margin-top: 50px;
+        margin-bottom: 28px;
+    }
+
+    .recipes p {
+    margin: 0 50px 50px 50px;
+    }
+
+    footer  div.subscribe {
+    float: none;
+    clear: both;
+    margin-left: 0;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+}
+
+
+@media (max-width: 1200px) {
+    .mainMenu {
+        margin-right: 60px;
+    }
+
+    .gallery {
+        padding: 0;
+    }
+    
+    .imgGallery img, .imgGallery img:nth-child(2)  {
+        width: calc(100% / 3);
+        margin: 0;
+    }
+
+    h5 {
+        margin-top: 0;
+    }
+
+    .top div, .bottom div {
+    width: 100%;
+    }   
+
+    .top div:first-child, .bottom div:last-child {
+        padding: 50px 50px 68px 50px;
+    }
+
+    .full-1 {
+    display: block;
+    text-align: center;
+    padding: 50px 50px 68px 50px;
+    }
+
+    .bottom div:last-child {
+        display: none;
+    }
+
+    .cook {
+    padding: 50px 50px 68px 50px;
+    }
+
+    .footer {
+    margin: 0 50px;
+    }
+    
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+h1 {
+    padding: 46px 50px;
+}
+.hamburger {
+    display: block;
+    margin: 0;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 3.2rem;
+}
+
+.mainMenu {
+    display: none;
+}
+
+.socialMenu {
+    display: none;
+}
+
+/* Landscape phones and down */
+@media (max-width: 650px) {
+
+h1 {
+    padding: 16px 20px;
+}
+
+.hamburger {
+    right: 20px;
+    top: 20px;
+}
+
+.iconsMenu {
+    padding: 50px 0 50px 0;
+}
+
+.iconContainer {
+    margin: 0 auto;
+}
+
+figure {
+    float: none;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.iconContainer figure:nth-child(2){
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imgGallery img:nth-child(3){
+    display: none;
+}
+
+.imgGallery img:nth-child(n+1){
+    width: 50%;
+}
+
+.cookBio img, .cookBio div {
+    float: none;
+    margin: 0 auto;
+}
+
+.cookBio img {
+    width: 200px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.cookText {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="email"] {
+    width: 360px;
+}
+
+input[type="submit"] {
+    width: 360px;
+    margin-top: 10px;
+}
+
+h6 {
+    margin-bottom: 10px;
+}
+
+.recentPosts {
+    display: none;
+}
+
+footer div.subscribe {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer {
+    padding: 50px 20px;
+    margin: 0;
+}
+
+.footer div {
+    float: none;
+    margin: 0;
+}
+
+.contact, .pages {
+    text-align: center;
+}
+.contact li, .pages li {
+    float: left;
+}
+
+.contact li {
+    width: calc(50% - 2px);
+}
+
+.contact li:nth-child(odd) {
+    text-align: right;
+}
+
+.contact li:nth-child(even) {
+    text-align: left;
+    margin-left: 4px;
+}
+
+.contact li:nth-child(odd)::after {
+    content:","
+}
+
+.footer {
+    padding-top: 0;
+}
+
+.footer .pages {
+    margin: 30px auto 0 auto;
+    width: 300px;
+}
+
+.pages li:nth-child(n+2) {
+    margin-left: 8px;
+}
+
+.pages li:nth-child(-n+3) a {
+    margin-right: 8px;
+}
+
+.pages li:nth-child(-n+3)::after {
+    content:"|"
+}
+
+.full-2 {
+    display: block;
+}
+
+.mobile-2 {
+    display: none;
+}
+
+.copyRight p {
+    margin: 0;
+}
+
+}
