@@ -48,14 +48,23 @@ h1, h2, h4 {
     font-family: 'Great Vibes', cursive;
 }
 
-/* HEADER BELOW */
+h2 {
+    padding-bottom: 50px;
+}
 
+
+
+/* HEADER BELOW */
 
 header {
     background-image: url(assets/image-1.png);
     background-size: cover;
     min-height: 100vh; 
     background-position: center;    
+}
+
+header a:hover, header a i:hover {
+    color: gray;
 }
 
 .header {
@@ -77,21 +86,21 @@ ul {
 .mainMenu {
     float: right;
     margin-right: 160px;
-    padding-top: 24px;
-
+    padding-top:24px;
 }
 
 .mainMenu li {
     float: left;
     list-style: none;
-    margin-left: 38px;
     text-transform: uppercase;
 }
 
 li a {
     color: #232323;
     text-decoration: none;
+    padding: 20px;
 }
+
 
 h1 {
     float: left;
@@ -121,8 +130,9 @@ li {
 }
 
 
-/* SOCIAL MENU BELOW */
 
+
+/* SOCIAL MENU BELOW */
 
 i {
     color: #232323; 
@@ -143,7 +153,7 @@ i {
     display: block;
 }
 
-/* HEADER END */
+
 
 /* MAIN SECTION START */
 
@@ -178,9 +188,13 @@ h4 {
     border-radius: 2px;
 }
 
+.about a:hover, .cookText a:hover , .recipes a:hover, input[type="submit"]:hover {
+    background: gray;
+}
+
+
 
 /* ICON MENU SECTION BELOW */
-
 
 .iconsMenu {
     background: #232323;
@@ -198,6 +212,7 @@ figure {
     text-align: center;
 }
 
+
 figcaption {
     color: #f8f8f8;
     font-size: 2.4rem;
@@ -213,8 +228,8 @@ figcaption {
 }
 
 
-/* GALLERY SECTION BELOW */
 
+/* GALLERY SECTION BELOW */
 
 .gallery {
     background: #f8f8f8;
@@ -229,6 +244,8 @@ figcaption {
 .imgGallery img:nth-child(2) {
     margin: 0 40px;
 }
+
+
 
 
 /*RECIPES SECTION BELOW */
@@ -264,8 +281,10 @@ h5 {
     width: 100%;
     display: block;
 }
-/* COOK SECTION */
 
+
+
+/* COOK SECTION */
 
 .cook {
     background: #f8f8f8;
@@ -291,6 +310,7 @@ h5 {
 }
 
 
+
 /* FOOTER SECTION BELOW */
 
 footer {
@@ -313,6 +333,10 @@ footer a, footer li, .subscribe p {
 
 footer a {
     padding: 5% 0;
+}
+
+footer a:hover {
+    color: #fdc800;
 }
 
 .full-2 {
@@ -361,6 +385,9 @@ input[type=submit] {
     border: none;
     margin: 0;
 }
+
+
+
 /* COPYRIGHT BELOW */
 
 .copyRight {
@@ -376,10 +403,7 @@ input[type=submit] {
 
 
 
-
 /* MEDIA QUERIES */
-
-
 
 @media (max-width: 1550px) {
     h5 {
@@ -397,14 +421,23 @@ input[type=submit] {
     margin-left: 0;
     padding-top: 100px;
     padding-bottom: 30px;
-}
+    }
 
 }
 
 
 @media (max-width: 1200px) {
+
     .mainMenu {
         margin-right: 60px;
+    }
+
+    h1 {
+        padding-left: 60px;
+    }
+
+    .about {
+        padding: 50px 50px 68px 50px;
     }
 
     .gallery {
@@ -452,169 +485,211 @@ input[type=submit] {
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-h1 {
-    padding: 46px 50px;
-}
-.hamburger {
-    display: block;
-    margin: 0;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    font-size: 3.2rem;
-}
+    h1 {
+        padding: 46px 50px;
+    }
+    .hamburger {
+        display: block;
+        margin: 0;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        font-size: 3.2rem;
+    }
 
-.mainMenu {
-    display: none;
-}
+    .mainMenu {
+        display: none;
+    }
 
-.socialMenu {
-    display: none;
+    .socialMenu {
+        display: none;
+    }
+
+    .recipes p {
+    margin: 0 0 50px 0;
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 650px) {
 
-h1 {
-    padding: 16px 20px;
-}
+    h1 {
+        padding: 16px 20px;
+    }
 
-.hamburger {
-    right: 20px;
-    top: 20px;
-}
+    .hamburger {
+        right: 20px;
+        top: 20px;
+    }
 
-.iconsMenu {
-    padding: 50px 0 50px 0;
-}
+    .iconsMenu {
+        padding: 50px 0 50px 0;
+    }
 
-.iconContainer {
-    margin: 0 auto;
-}
+    .iconContainer {
+        margin: 0 auto;
+    }
 
-figure {
-    float: none;
-    width: 150px;
-    margin: 0 auto;
-}
+    figure {
+        float: none;
+        width: 150px;
+        margin: 0 auto;
+    }
 
-.iconContainer figure:nth-child(2){
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+    .iconContainer figure:nth-child(2){
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
-.imgGallery img:nth-child(3){
-    display: none;
-}
+    .imgGallery img:nth-child(3){
+        display: none;
+    }
 
-.imgGallery img:nth-child(n+1){
-    width: 50%;
-}
+    .imgGallery img:nth-child(n+1){
+        width: 50%;
+    }
 
-.cookBio img, .cookBio div {
-    float: none;
-    margin: 0 auto;
-}
+    .cookBio img, .cookBio div {
+        float: none;
+        margin: 0 auto;
+    }
 
-.cookBio img {
-    width: 200px;
-    display: block;
-    margin-bottom: 30px;
-}
+    .cookBio img {
+        width: 200px;
+        display: block;
+        margin-bottom: 30px;
+    }
 
-.cookText {
-    padding: 0;
-    width: 100%;
+    .cookText {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    input[type="email"] {
+        width: 360px;
+    }
+
+    input[type="submit"] {
+        width: 360px;
+        margin-top: 10px;
+    }
+
+    h6 {
+        margin-bottom: 10px;
+    }
+
+    .recentPosts {
+        display: none;
+    }
+
+    footer div.subscribe {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .footer {
+        padding: 50px 20px;
+        margin: 0;
+    }
+
+    .footer div {
+        float: none;
+        margin: 0;
+    }
+
+    .contact, .pages {
+        text-align: center;
+    }
+    .contact li, .pages li {
+        float: left;
+    }
+
+    .contact li {
+        width: calc(50% - 2px);
+    }
+
+    .contact li:nth-child(odd) {
+        text-align: right;
+    }
+
+    .contact li:nth-child(even) {
+        text-align: left;
+        margin-left: 4px;
+    }
+
+    .contact li:nth-child(odd)::after {
+        content:","
+    }
+
+    .footer {
+        padding-top: 0;
+    }
+
+    .footer .pages {
+        margin: 30px auto 0 auto;
+        width: 300px;
+    }
+
+    .pages li:nth-child(n+2) {
+        margin-left: 8px;
+    }
+
+    .pages li:nth-child(-n+3) a {
+        margin-right: 8px;
+    }
+
+    .pages li:nth-child(-n+3)::after {
+        content:"|"
+    }
+
+    .full-2 {
+        display: block;
+    }
+
+    .mobile-2 {
+        display: none;
+    }
+
+    ::-webkit-input-placeholder { 
+        text-align: center;
+    }
+    ::-moz-placeholder {
     text-align: center;
-}
-
-input[type="email"] {
-    width: 360px;
-}
-
-input[type="submit"] {
-    width: 360px;
-    margin-top: 10px;
-}
-
-h6 {
-    margin-bottom: 10px;
-}
-
-.recentPosts {
-    display: none;
-}
-
-footer div.subscribe {
+    }
+    :-ms-input-placeholder { 
     text-align: center;
-    padding-top: 50px;
-}
-
-.footer {
-    padding: 50px 20px;
-    margin: 0;
-}
-
-.footer div {
-    float: none;
-    margin: 0;
-}
-
-.contact, .pages {
+    }
+    :-moz-placeholder { 
     text-align: center;
-}
-.contact li, .pages li {
-    float: left;
+    }
+
+    .copyRight p {
+        margin: 0;
+    }
+
 }
 
-.contact li {
-    width: calc(50% - 2px);
-}
+@media (max-width: 320px) {
 
-.contact li:nth-child(odd) {
-    text-align: right;
-}
+    h2 {
+    font-size: 10rem;
+    }
 
-.contact li:nth-child(even) {
-    text-align: left;
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    input[type="email"], input[type="submit"] {
+        width: 280px;
+    }
+
+    .pages li:nth-child(n+2) {
     margin-left: 4px;
-}
+    }
 
-.contact li:nth-child(odd)::after {
-    content:","
-}
-
-.footer {
-    padding-top: 0;
-}
-
-.footer .pages {
-    margin: 30px auto 0 auto;
-    width: 300px;
-}
-
-.pages li:nth-child(n+2) {
-    margin-left: 8px;
-}
-
-.pages li:nth-child(-n+3) a {
-    margin-right: 8px;
-}
-
-.pages li:nth-child(-n+3)::after {
-    content:"|"
-}
-
-.full-2 {
-    display: block;
-}
-
-.mobile-2 {
-    display: none;
-}
-
-.copyRight p {
-    margin: 0;
-}
-
+    .pages li:nth-child(-n+3) a {
+    margin-right: 4px;
+    }
 }
